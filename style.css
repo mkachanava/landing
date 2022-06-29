@@ -34,7 +34,6 @@ p {
 body {
 	font-family: 'DM Sans', sans-serif;
 	background-color: rgb(220, 233, 226);
-	/* width: 100%; */
 }
 
 .header-logo {
@@ -61,7 +60,6 @@ body {
 
 header {
 	width: 100%;
-	/* height: 72px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -90,7 +88,7 @@ header:hover .link-item li {
 	border-radius: 40px;
 }
 
-.assistência-médica {
+.assistencia-medica {
 	margin-top: 144px;
 }
 
@@ -164,11 +162,11 @@ h1:first-letter {
 	text-transform: uppercase;
 }
 
-.médica-text:first-letter {
+.medica-text:first-letter {
 	text-transform: uppercase;
 }
 
-.médica-text {
+.medica-text {
 	padding-bottom: 32px;
 	font-style: normal;
 	font-weight: 400;
@@ -182,20 +180,18 @@ section, footer {
 	flex-wrap: wrap;
 }
 
-.assistência-médica-container {
+.assistencia-medica-container {
 	max-width: 1120px;
-	/* height: 606px; */
 	display: flex;
 	margin-top: 80px;
 }
 
-.assistência-médica {
+.assistencia-medica {
 	background-color: rgba(220, 233, 226, 1);
 }
 
 .podemos-container {
 	max-width: 1120px;
-	/* height: 1082px; */
 }
 
 .sobre-nos {
@@ -204,7 +200,6 @@ section, footer {
 
 .sobre-nos-container {
 	max-width: 1120px;
-	/* height: 734px; */
 	display: flex;
 	justify-content: space-between;
 	padding-top: 160px;
@@ -212,12 +207,11 @@ section, footer {
 }
 
 .contato {
-	background-color: rgb(255, 255, 255);;
+	background-color: rgb(255, 255, 255);
 }
 
 .contato-container {
 	max-width: 1120px;
-	/* height: 699px; */
 	display: flex;
 	justify-content: space-between;
 	background-color: rgba(255, 255, 255, 1);
@@ -226,14 +220,9 @@ section, footer {
 	padding-bottom: 160px;
 	justify-content: center;
 	column-gap: 208px;
-
 }
 
-/* .médica-text-item, .médica-image-item {
-	width: 100%;
-} */
-
-.médica-text-item {
+.medica-text-item {
 	display: flex;
 	flex-direction: column;
 	padding-top: 80px;
@@ -263,7 +252,6 @@ button {
 	opacity: 0.6;
 	transition: 0.7s;
 	flex-wrap: wrap;
-
 }
 
 button:hover {
@@ -288,19 +276,16 @@ button p {
 }
 
 .items {
-	/* width: 100%; */
-	/* height: 210px; */
 	border: 1px solid rgba(220, 233, 226, 1);
 	bottom: 30px;
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
-	padding: 60px 119px 60px 120px;
+	padding: 60px 120px 60px 120px;
 	text-align: center;
 }
 
 .items-row {
-	/* max-width: 1120px; */
 	position: relative;
 	bottom: 110px;
 	background-color: rgba(255, 250, 241, 1);
@@ -412,7 +397,6 @@ h3::first-letter {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-
 }
 
 .contacts li {
@@ -453,7 +437,6 @@ address {
 
 .footer-container {
 	max-width: 1120px;
-	/* height: 268px; */
 	padding-top: 80px;
 	padding-bottom: 80px;
 	display: flex;
@@ -461,7 +444,6 @@ address {
 	align-items: center;
 	flex-wrap: wrap;
 	column-gap: 672px;
-	
 }
 
 .social-network-item {
@@ -501,32 +483,30 @@ address {
 }
 
 
-/* =========================================================== */
-
 @media (max-width: 375px) {
 	.header-menu, .link-item {
 		display: none;
 	}
 	.header-container {
 		padding: 27px 24px 27px 24px;
-}
-	.assistência-médica-container {
+	}
+	.assistencia-medica-container {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 		position: relative;
-}
-	.médica-text-item, .médica-text {
+	}
+	.medica-text-item, .medica-text {
 		text-align: center;
 		flex-wrap: wrap;
 		position: relative;
-}
+	}
 	h1 {
 		font-size: 34px;
-}
+	}
 	button, .woman-image {
 		margin: 0 auto;
-}
+	}
 	.items {
 		border: 1px solid rgba(220, 233, 226, 1);
 		bottom: 30px;
@@ -535,15 +515,7 @@ address {
 		grid-template-columns: 1fr;
 		padding: 40px 80px 40px 80px;
 		text-align: center;
-}
-	.table-container {
-		display: grid;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-columns: 1fr;
-} 
-	.borders-item {
-		border: none;
-} 
+	}
 	.table-container {
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -551,67 +523,22 @@ address {
 	} 
 	.borders-item {
 		border: none;
-} 
+	} 
+	.table-container {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	} 
+	.borders-item {
+		border: none;
+	} 
     img {
 		max-width: 100%;
 	}
-}
-
-
-@media (max-width: 1150px) {
-	.table-container {
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-columns: 1fr;
-		margin-bottom: 100px;
-	} 
-		.borders-item {
-			border: none;
+	.button  {
+		margin-left: 0px;
 	}
-		.sobre-nos-container {
-			flex-direction: column-reverse;
-	}
-		h1 {
-			font-size: 34px;
-	} 
-		.header-menu, .link-item {
-		display: none;
 }
-
-		.medicine-text {
-			padding-bottom: 67px;
-		}
-
-		.item-row:hover {
-			transform: scale(1.1);
-}
-		.médica-text {
-			padding-left: 0px;
-}
-
-		.social-network-item {
-			padding-top: 24px;
-
-}
-        .button {
-			margin-bottom: 60px;
-		}
-
-		.woman-image {
-			margin-top: 70px;
-		}
-
-		.médica-text-item {
-			padding-right: 0;
-		}
-		.medicine-text {
-			padding-left: 0;
-}
-		img {
-			max-width: 100%;
-		}
-}
-
-
 
 
 @media (max-width: 1150px) {
@@ -620,24 +547,24 @@ address {
 	}
 	.header-container {
 		padding: 27px 24px 27px 24px;
-}
-	.assistência-médica-container {
+	}
+	.assistencia-medica-container {
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
 		position: relative;
-}
-	.médica-text-item, .médica-text {
+	}
+	.medica-text-item, .medica-text {
 		text-align: center;
 		flex-wrap: wrap;
 		position: relative;
-}
+	}
 	h1 {
 		font-size: 34px;
-}
+	}
 	button, .woman-image {
 		margin: 0 auto;
-}
+	}
 	.items {
 		border: 1px solid rgba(220, 233, 226, 1);
 		bottom: 30px;
@@ -646,15 +573,7 @@ address {
 		grid-template-columns: 1fr;
 		padding: 40px 80px 40px 80px;
 		text-align: center;
-}
-	.table-container {
-		display: grid;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-columns: 1fr;
-} 
-	.borders-item {
-		border: none;
-} 
+	}
 	.table-container {
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -662,14 +581,63 @@ address {
 	} 
 	.borders-item {
 		border: none;
-} 
-     .contato-container {
+	} 
+	.table-container {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	} 
+	.borders-item {
+		border: none;
+	} 
+    .contato-container {
 		justify-content: left;
-	 }
-	 .button p {
-		margin: 0px;
+	}
+	.button  {
+		margin-left: 0px;
+	}
+	.table-container {
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		margin-bottom: 100px;
+	} 
+	.borders-item {
+		border: none;
+	}
+	.sobre-nos-container {
+		flex-direction: column-reverse;
+	}
+	h1 {
+		font-size: 34px;
+	} 
+	.header-menu, .link-item {
+		display: none;
+	}
+	.medicine-text {
+		padding-bottom: 67px;
+	}
+	.item-row:hover {
+		transform: scale(1.1);
+	}
+	.medica-text {
+		padding-left: 0px;
+	}
+	.social-network-item {
+		padding-top: 24px;
+	}
+	.button {
+		margin-bottom: 60px;
+	}
+	.woman-image {
+		margin-top: 70px;
+	}
+	.medica-text-item {
+		padding-right: 0;
+	}
+	.medicine-text {
+		padding-left: 0;
+	}
+	img {
+		max-width: 100%;
 	}
 }
-
-
-
