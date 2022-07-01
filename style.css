@@ -1,0 +1,652 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: rgba(73, 80, 87, 1);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex-wrap: wrap;
+}
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	background-color: rgb(220, 233, 226);
+}
+
+.header-logo {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	display: inline-block;
+}
+
+.header-logo .logo-hover {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.header:hover .logo-hover {
+	display: inline;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	background-color: rgba(220, 233, 226, 1);
+	z-index: 1;
+	flex-wrap: wrap;
+	transition: .5s;
+}
+
+header:hover {
+	background-color: rgba(0, 133, 111, 1);
+}
+
+header:hover .menu-link a {
+	color: rgba(220, 233, 226, 1);
+}
+
+.menu-link {
+	transition: .5s;
+}
+
+header:hover .link-item li {
+	color: rgba(220, 233, 226, 1);
+	border: 1px solid rgba(220, 233, 226, 1);
+	border-radius: 40px;
+}
+
+.assistencia-medica {
+	margin-top: 144px;
+}
+
+.header-container {
+	width: 1120px;
+	height: 72px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;	
+}
+
+.link-item li {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: rgba(0, 133, 111, 1);
+	padding: 9px 16px 9px 16px;
+	cursor: pointer;
+}
+
+.link-item ul {
+	border: 1px solid rgba(0, 133, 111, 1);
+	border-radius: 40px;
+}
+
+.menu-list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.menu-link:hover {
+	padding-bottom: 25px;
+	border-bottom: 2px solid rgba(220, 233, 226, 1);
+	cursor: pointer;
+}
+
+.menu-link {
+	margin-right: 32px;	
+}
+
+.menu-link a {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: rgba(0, 133, 111, 1);
+}
+
+span {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 150%;
+	color: rgba(0, 133, 111, 1);
+	text-transform: uppercase;
+	padding-bottom: 16px;
+}
+
+h1 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 52px;
+	padding-bottom: 24px;
+	color: rgba(33, 37, 41, 1);
+}
+
+h1:first-letter {
+	text-transform: uppercase;
+}
+
+.medica-text:first-letter {
+	text-transform: uppercase;
+}
+
+.medica-text {
+	padding-bottom: 32px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	color: rgba(73, 80, 87, 1);
+}
+
+section, footer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.assistencia-medica-container {
+	max-width: 1120px;
+	display: flex;
+	margin-top: 80px;
+}
+
+.assistencia-medica {
+	background-color: rgba(220, 233, 226, 1);
+}
+
+.podemos-container {
+	max-width: 1120px;
+}
+
+.sobre-nos {
+	background-color: rgba(255, 250, 241, 1);	
+}
+
+.sobre-nos-container {
+	max-width: 1120px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 160px;
+	padding-bottom: 160px;
+}
+
+.contato {
+	background-color: rgb(255, 255, 255);
+}
+
+.contato-container {
+	max-width: 1120px;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 1);
+	flex-wrap: wrap;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	justify-content: center;
+	column-gap: 208px;
+}
+
+.medica-text-item {
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
+	padding-right: 51px;
+	flex-wrap: wrap;
+}
+
+.button {
+	display: flex;
+	cursor: pointer;
+	flex-wrap: wrap;
+}
+
+button {
+	display: flex;
+	background-color: rgba(0, 133, 111, 1);
+	height: 52px;
+	width: 263px;
+	left: 123px;
+	top: 435px;
+	border-radius: 40px;
+	padding: 16px, 32px, 16px, 32px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 84px;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: 0.7s;
+	flex-wrap: wrap;
+}
+
+button:hover {
+	opacity: 1;
+}
+
+.call-image {
+	padding-right: 18px;
+}
+
+button p {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 1);
+}
+
+.podemos {
+	background-color: rgba(247, 249, 249, 1);
+}
+
+.items {
+	border: 1px solid rgba(220, 233, 226, 1);
+	bottom: 30px;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 60px 120px 60px 120px;
+	text-align: center;
+}
+
+.items-row {
+	position: relative;
+	bottom: 110px;
+	background-color: rgba(255, 250, 241, 1);
+}
+
+.quantity {
+	font-weight: 700;
+	font-size: 48px;
+}
+
+.borders-item {
+	border-left: 1px solid rgba(0, 133, 111, 1);
+	border-right: 1px solid rgba(0, 133, 111, 1);
+} 
+
+.peoples::first-letter {
+	text-transform: uppercase;
+}
+
+.peoples {
+	font-weight: 400;
+ 	font-size: 16px;
+	color: rgba(0, 133, 111, 1);
+}
+
+.table-container {
+	display: grid;
+	grid-template-rows: 1fr 1fr ;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 40px;
+	margin-bottom: 160px;
+}
+
+.especialistas-block {
+	border-left: 1px solid rgba(0, 133, 111, 1);
+	border-right: 1px solid rgba(0, 133, 111, 1);
+}
+
+.block-text {
+	margin-bottom: 64px;
+    text-align: center;
+}
+
+h2::first-letter {
+	text-transform: uppercase;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 52px;
+	padding-bottom: 24px;
+}
+
+h3::first-letter {
+	text-transform: uppercase;
+}
+
+.item-row p::first-letter {
+	text-transform: uppercase;
+}
+
+.item-row {
+	padding: 24px;
+	background-color: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(220, 233, 226, 1);
+	transition: .5s;
+}
+
+.item-row:hover {
+	transform: scale(1.5);
+	cursor: pointer; 
+}
+
+.doctor-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.medicine-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 67px;
+	flex-wrap: wrap;
+}
+
+.medicine-text p::first-letter {
+	text-transform: uppercase;
+}
+
+.contato-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.contato-info h2 {
+	padding-bottom: 40px;
+}
+
+.pacient-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.contacts li {
+	display: flex;
+	flex-wrap: wrap;
+}
+.contacts {
+	padding-bottom: 40px;
+}
+
+.contacts li div {
+	padding-right: 10px;
+}
+
+.button p {
+	padding-left: 18px;
+}
+
+address {
+	font-style: normal;
+	text-transform: capitalize;
+	color: rgba(73, 80, 87, 1);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.contacts li a {
+	color: rgba(73, 80, 87, 1);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.footer {
+	background-color: rgba(0, 133, 111, 1);
+}
+
+.footer-container {
+	max-width: 1120px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	column-gap: 672px;
+}
+
+.social-network-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo-footer {
+	padding-bottom: 24px;
+}
+
+.company-info .rights-company-item {
+	padding-bottom: 15px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(255, 250, 241, 1);
+}
+
+.company-info .rights-item::first-letter {
+	text-transform: uppercase;
+}
+
+.company-info .rights-item {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(255, 250, 241, 1);
+}
+
+.youtube, .facebook {
+	padding-left: 40px;
+}
+
+[class*="-container"] {
+	margin: 0px 24px;
+}
+
+
+@media (max-width: 375px) {
+	.header-menu, .link-item {
+		display: none;
+	}
+	.header-container {
+		padding: 27px 24px 27px 24px;
+	}
+	.assistencia-medica-container {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.medica-text-item, .medica-text {
+		text-align: center;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	h1 {
+		font-size: 34px;
+	}
+	button, .woman-image {
+		margin: 0 auto;
+	}
+	.items {
+		border: 1px solid rgba(220, 233, 226, 1);
+		bottom: 30px;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		padding: 40px;
+		text-align: center;
+	}
+	.table-container {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	} 
+	.borders-item {
+		border: none;
+	} 
+	.table-container {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	} 
+	.borders-item {
+		border: none;
+	} 
+    img {
+		max-width: 100%;
+	}
+	.button  {
+		margin-left: 0px;
+	}
+	.woman-image img, svg, .pacient-image img {
+		min-width: 100%;
+	}
+    h2 {
+	font-size: 30px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+	.header-menu, .link-item {
+		display: none;
+	}
+	.header-container {
+		padding: 27px 24px 27px 24px;
+	}
+	.assistencia-medica-container {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	.medica-text-item, .medica-text {
+		text-align: center;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	h1 {
+		font-size: 34px;
+	}
+	button, .woman-image {
+		margin: 0 auto;
+	}
+	.items {
+		border: 1px solid rgba(220, 233, 226, 1);
+		bottom: 30px;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		padding: 40px;
+		text-align: center;
+	}
+	.table-container {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	} 
+	.borders-item {
+		border: none;
+	} 
+	.table-container {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	} 
+	.borders-item {
+		border: none;
+	} 
+    .contato-container {
+		justify-content: left;
+	}
+	.button  {
+		margin-left: 0px;
+	}
+	.table-container {
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		margin-bottom: 100px;
+	} 
+	.borders-item {
+		border: none;
+	}
+	.sobre-nos-container {
+		flex-direction: column-reverse;
+	}
+	h1 {
+		font-size: 34px;
+	} 
+	.header-menu, .link-item {
+		display: none;
+	}
+	.medicine-text {
+		padding-bottom: 67px;
+	}
+	.item-row:hover {
+		transform: scale(1.3);
+	}
+	.medica-text {
+		padding-left: 0px;
+	}
+	.social-network-item {
+		padding-top: 24px;
+	}
+	.button {
+		margin-bottom: 60px;
+	}
+	.woman-image {
+		margin-top: 70px;
+	}
+	.medica-text-item {
+		padding-right: 0;
+	}
+	.medicine-text {
+		padding-left: 0;
+	}
+	.woman-image img, svg, .pacient-image img {
+		max-width: 100%;
+	}
+    h2 {
+	font-size: 30px;
+    }
+}
