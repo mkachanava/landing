@@ -117,12 +117,6 @@ header:hover .link-item li {
 	border-radius: 40px;
 }
 
-.menu-list {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
 .menu-link:hover {
 	padding-bottom: 25px;
 	border-bottom: 2px solid rgba(220, 233, 226, 1);
@@ -482,6 +476,9 @@ address {
 	margin: 0px 24px;
 }
 
+.menu-icon {
+	display: none;
+}
 
 @media (max-width: 375px) {
 	.header-menu, .link-item {
@@ -546,11 +543,119 @@ address {
     }
 }
 
-
-@media (max-width: 1150px) {
-	.header-menu, .link-item {
-		display: none;
+	@media (min-width: 1150px) {
+	.menu-list {
+		display: flex;
+		align-items: center;
 	}
+}
+
+	@media (max-width: 1150px) {
+	.menu-icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 20px;
+		height: 16px;
+		cursor: pointer;
+	}
+	.menu-icon .icon,
+	.menu-icon::before,
+	.menu-icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: rgb(255, 255, 255);
+	}
+
+	.menu-icon::before,
+	.menu-icon::after {
+		content: "";
+	}
+	.menu-icon::before {
+		top: 0;
+	}
+	.menu-icon::after {
+		width: 12px;
+		bottom: 0;
+	}
+	.menu-icon .icon {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	.menu-icon.-active .icon {
+		transform: scale(0) translate(0px, -50%);
+	}
+	.menu-icon.-active::before {
+		top: 50%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+	.menu-icon.-active::after {
+		bottom: 100%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
+
+	.menu-body {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 133, 111, 1);
+		padding: 100px 30px 30px 30px;
+		transition: left 0.3s ease 0s;
+		overflow: auto;
+	}
+	.menu-body.-active {
+		left: 0;
+	}
+
+	.menu-body::before {
+		content: "";
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	.menu-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.menu-list li a {
+		padding-bottom: 48px;
+		font-weight: 700;
+		font-size: 24px;
+	}
+
+	.menu-list  li {
+		flex-wrap: wrap;
+		padding-bottom: 48px;
+	}
+	.menu-list  li a:hover {
+		background-color: rgb(255, 255, 255);
+		padding: 16px 32px;
+		border-radius: 40px;
+		transition: .1s;
+		color: rgba(0, 133, 111, 1);
+	}
+
+	.menu-list  li:last-child {
+		margin-bottom: 0;
+	}
+	.menu-list  li.-active {
+		display: block;
+	}
+	.menu-link {
+		font-size: 24px;
+	}
+
 	.header-container {
 		padding: 27px 24px 27px 24px;
 	}
@@ -596,7 +701,7 @@ address {
 	.borders-item {
 		border: none;
 	} 
-    .contato-container {
+	.contato-container {
 		justify-content: left;
 	}
 	.button  {
@@ -616,7 +721,7 @@ address {
 	h1 {
 		font-size: 34px;
 	} 
-	.header-menu, .link-item {
+		.link-item {
 		display: none;
 	}
 	.medicine-text {
@@ -646,7 +751,7 @@ address {
 	.woman-image img, svg, .pacient-image img {
 		max-width: 100%;
 	}
-    h2 {
+	h2 {
 	font-size: 30px;
-    }
+	}
 }
