@@ -78,11 +78,9 @@ header:hover .menu-link a {
 	color: rgba(220, 233, 226, 1);
 }
 
-.menu-link {
-	transition: .5s;
-}
 
-header:hover .link-item li {
+
+header:hover .link-item a {
 	color: rgba(220, 233, 226, 1);
 	border: 1px solid rgba(220, 233, 226, 1);
 	border-radius: 40px;
@@ -101,7 +99,7 @@ header:hover .link-item li {
 	flex-wrap: wrap;	
 }
 
-.link-item li {
+.link-item a  {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -112,7 +110,7 @@ header:hover .link-item li {
 	cursor: pointer;
 }
 
-.link-item ul {
+.link-item a  {
 	border: 1px solid rgba(0, 133, 111, 1);
 	border-radius: 40px;
 }
@@ -224,13 +222,13 @@ section, footer {
 	flex-wrap: wrap;
 }
 
-.button {
+.button  {
 	display: flex;
 	cursor: pointer;
 	flex-wrap: wrap;
 }
 
-button {
+.call-image {
 	display: flex;
 	background-color: rgba(0, 133, 111, 1);
 	height: 52px;
@@ -248,15 +246,38 @@ button {
 	flex-wrap: wrap;
 }
 
-button:hover {
-	opacity: 1;
+.button {
+	display: flex;
+	background-color: rgba(0, 133, 111, 1);
+	height: 56px;
+	width: 267px;
+	left: 123px;
+	top: 446px;
+	border-radius: 40px;
+	padding: 16px, 32px, 16px, 32px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 84px;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: 0.7s;
+	flex-wrap: wrap;
 }
 
-.call-image {
+.call-image:hover {
+	background-color: rgb(0, 69, 58);
+}
+
+.button:hover {
+	background-color: rgb(0, 69, 58);
+}
+
+.call-image li a {
 	padding-right: 18px;
 }
 
-button p {
+
+.call-image li a {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -264,6 +285,16 @@ button p {
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 1);
 }
+
+.button li a {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 1);
+}
+
 
 .podemos {
 	background-color: rgba(247, 249, 249, 1);
@@ -396,6 +427,7 @@ h3::first-letter {
 .contacts li {
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 16px;
 }
 .contacts {
 	padding-bottom: 40px;
@@ -405,8 +437,8 @@ h3::first-letter {
 	padding-right: 10px;
 }
 
-.button p {
-	padding-left: 18px;
+.button li a {
+	padding-right: 18px;
 }
 
 address {
@@ -476,10 +508,11 @@ address {
 	margin: 0px 24px;
 }
 
-.menu-icon {
+.agende-mobile,
+.socials-mobile {
 	display: none;
 }
-
+/* 
 @media (max-width: 375px) {
 	.header-menu, .link-item {
 		display: none;
@@ -501,7 +534,7 @@ address {
 	h1 {
 		font-size: 34px;
 	}
-	button, .woman-image {
+	.call-image, .woman-image {
 		margin: 0 auto;
 	}
 	.items {
@@ -541,7 +574,7 @@ address {
     h2 {
 	font-size: 30px;
     }
-}
+} */
 
 	@media (min-width: 1150px) {
 	.menu-list {
@@ -550,7 +583,7 @@ address {
 	}
 }
 
-	@media (max-width: 1150px) {
+	@media (max-width: 375px) {
 	.menu-icon {
 		z-index: 5;
 		display: block;
@@ -586,20 +619,19 @@ address {
 		transform: scale(1) translate(0px, -50%);
 	}
 
-	.menu-icon.-active .icon {
+	.menu-icon.active .icon {
 		transform: scale(0) translate(0px, -50%);
 	}
-	.menu-icon.-active::before {
+	.menu-icon.active::before {
 		top: 50%;
 		transform: rotate(-45deg) translate(0px, -50%);
 	}
-	.menu-icon.-active::after {
-		bottom: 100%;
+	.menu-icon.active::after {
+		bottom: 50%;
 		transform: rotate(45deg) translate(0px, 50%);
 	}
 
-	.menu-body {
-		position: fixed;
+	#headerMenu {
 		top: 0;
 		left: -100%;
 		width: 100%;
@@ -609,11 +641,11 @@ address {
 		transition: left 0.3s ease 0s;
 		overflow: auto;
 	}
-	.menu-body.-active {
+	#headerMenu.active {
 		left: 0;
 	}
 
-	.menu-body::before {
+	#headerMenu::before {
 		content: "";
 		position: fixed;
 		width: 100%;
@@ -649,7 +681,7 @@ address {
 	.menu-list  li:last-child {
 		margin-bottom: 0;
 	}
-	.menu-list  li.-active {
+	.menu-list  li.active {
 		display: block;
 	}
 	.menu-link {
@@ -673,7 +705,7 @@ address {
 	h1 {
 		font-size: 34px;
 	}
-	button, .woman-image {
+	.call-image, .woman-image {
 		margin: 0 auto;
 	}
 	.items {
@@ -754,4 +786,14 @@ address {
 	h2 {
 	font-size: 30px;
 	}
+
+	.agende-mobile,
+    .socials-mobile {
+	display: block;
+}
+
+/* #headerMenu {
+	position: fixed;
+} */
+
 }
